@@ -1,0 +1,9 @@
+
+<!-- <h1>Todo</h1> ret skidt da det kun skal vises en gang -->
+<div [ngClass]="setClasses()">
+<input (change)="myMethod()" type="checkbox" [checked]="todo.completed"> title {{todo.title}} <button (click)="delete()" >Done</button>
+</div>
+
+<!-- checked name type og alle de andre i et HTML element hedder attribute -->
+
+<!-- [checked]="todo.completed"   -- hedder property binding / data binding -->

@@ -1,0 +1,55 @@
+<p>person works!</p>
+
+<div>
+  <p>
+    Navnet på personen er {{name}}
+    <br> Og vores mail er {{mail}}
+    {{talArray}}
+  </p>
+
+    {{1+1+5*4}}
+</div>
+
+hvordan formatere vi vores data pænere?a
+<div *ngFor="let tal of talArray">
+ {{tal}} <!-- de hedder tuborg eller interpolation  -->
+</div>
+<ul>
+  <li *ngFor="let x of talArray">
+    hej med dig {{x}}
+  </li>
+</ul>
+<!-- foreach(var item in arraylist)
+cw(item.noget); -->
+
+
+
+<div>
+  personens id: {{personObj.id}}
+  personens navn: {{personObj.name}}
+  personens addresse : {{personObj.address}}
+  personens findes: {{personObj.blacklistet}}
+</div>
+<br>
+<br>
+en div for en liste
+<br>
+<div *ngFor="let objPerson of personList">
+  <p *ngIf="objPerson.blacklistet">
+  {{objPerson.name}}
+  <!-- <p *ngIf="false">
+    {{objPerson.address}}
+
+  </p> -->
+
+    {{objPerson.address}}
+    {{objPerson.date | date:'shortDate'}}
+    en anden dato
+    {{objPerson.date | date:'dd-MM-yyyy'}}
+  </p>
+</div>
+<button (click)="addPerson()">Add Person</button>
+
+<button (click)='testingArguments("hans og grethe")'>Passing arguments back to angular</button>
+
+

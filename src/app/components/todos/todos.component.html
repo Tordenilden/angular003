@@ -1,0 +1,14 @@
+<p>todos works!</p>
+
+her skal vi passe vores objekter til child component, som så create farvelade / HTML
+
+<!-- <app-todo [todo]="todos[0]"></app-todo> -->
+<!-- så for at få dem alle kunne man måske gøre følgende -->
+<!-- <app-todo [todo]="todos[0]"></app-todo>
+<app-todo [todo]="todos[1]"></app-todo>
+<app-todo [todo]="todos[2]"></app-todo> -->
+
+<h1>Todo</h1>
+<app-todo *ngFor="let objectTodo of todos" [todo]="objectTodo" [ballade]="text"></app-todo>
+
+
